@@ -26,12 +26,12 @@
  * indicating the size of such an array. This will print minimum, maximum, mean, and median
  * value of the data contained in the array 
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* array>  <The data array>
+ * @param <unsigned int size>     <The size of the array>
  *
  * @return <void>
  */
-void print_statistics(unsigned char* a, unsigned int l);
+void print_statistics(unsigned char* array, unsigned int size);
 
 /**
  * @brief <Prints an array of unsigned char having a given legth to the screen>
@@ -40,12 +40,12 @@ void print_statistics(unsigned char* a, unsigned int l);
  * indicating the size of such an array. This will print the data contained in the array to 
  * the screen 
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* array>  <The data array>
+ * @param <unsigned int size>     <The size of the array>
  *
  * @return <void>
  */
-void print_array(unsigned char* a, unsigned int l);
+void print_array(unsigned char* a, unsigned int N);
 
 /**
  * @brief <Returns the median value of an array of unsigned char having a given legth>
@@ -54,12 +54,12 @@ void print_array(unsigned char* a, unsigned int l);
  * indicating the size of such an array. This will return the median value of the data 
  * contained in the array.
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* a>  <The data array>
+ * @param <unsigned int N>    <The size of the array>
  *
  * @return <The median value of the data contained in the array>
  */
-unsigned char find_median(unsigned char* a, unsigned int l);
+unsigned char find_median(unsigned char* a, unsigned int N);
 
 /**
  * @brief <Returns the mean value of an array of unsigned char having a given legth>
@@ -68,12 +68,12 @@ unsigned char find_median(unsigned char* a, unsigned int l);
  * indicating the size of such an array. This will return the mean value of the data 
  * contained in the array.
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* a>  <The data array>
+ * @param <unsigned int N>    <The size of the array>
  *
  * @return <The mean value of the data contained in the array>
  */
-unsigned char find_mean(unsigned char* a, unsigned int l);
+unsigned char find_mean(unsigned char* a, unsigned int N);
 
 /**
  * @brief <Returns the maximum value of an array of unsigned char having a given legth>
@@ -82,12 +82,12 @@ unsigned char find_mean(unsigned char* a, unsigned int l);
  * indicating the size of such an array. This will return the maximum value of the data 
  * contained in the array.
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* a>  <The data array>
+ * @param <unsigned int N>    <The size of the array>
  *
  * @return <The maximum value of the data contained in the array>
  */
-unsigned char find_maximum(unsigned char* a, unsigned int l);
+unsigned char find_maximum(unsigned char* a, unsigned int N);
 
 /**
  * @brief <Returns the minimum value of an array of unsigned char having a given legth>
@@ -96,12 +96,12 @@ unsigned char find_maximum(unsigned char* a, unsigned int l);
  * indicating the size of such an array. This will return the minimum value of the data 
  * contained in the array.
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* a>  <The data array>
+ * @param <unsigned int N>    <The size of the array>
  *
  * @return <The minimum value of the data contained in the array>
  */
-unsigned char find_minimum(unsigned char* a, unsigned int l);
+unsigned char find_minimum(unsigned char* a, unsigned int N);
 
 /**
  * @brief <Sorts an array of unsigned char having a given legth from the largest element [0th element] to the 
@@ -112,11 +112,11 @@ unsigned char find_minimum(unsigned char* a, unsigned int l);
  * which will be placed at the 1st position of the sorted array, to the smallest element,
  * which will be placed at the last position of the sorted array. 
  *
- * @param <*a>  <The data array>
- * @param <l>   <The size of the array>
+ * @param <unsigned char* a>  <The data array>
+ * @param <unsigned int N>    <The size of the array>
  *
  * @return <void>
  */
-void sort_array(unsigned char* a, unsigned int l);
+void sort_array(unsigned char* a, unsigned int N);
 
 #endif /* __STATS_H__ */
